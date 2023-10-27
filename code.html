@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // Define a list of 6-digit codes and their corresponding URLs
+        const codeList = {
+            "123456": "https://www.google.com/",
+            "654321": "https://www.example.com/",
+        };
+
+        // Function to check for the code parameter and redirect if found
+        function checkAndRedirect() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const codeParam = urlParams.get("code");
+
+            if (codeParam && codeList[codeParam]) {
+                window.location.href = codeList[codeParam];
+            } else {
+                // Code not found, display an error message or take another action
+                alert("Code not found or invalid. Please restart the app and insert code again.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Code Redirect Page</h1>
+    <p>Checking for a code parameter...</p>
+
+    <script>
+        // Call the checkAndRedirect function when the page loads
+        checkAndRedirect();
+    </script>
+</body>
+</html>
