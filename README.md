@@ -4,8 +4,8 @@ Welcome To About Me Viewer Repository!
 
 Modify Url Provided Below To Create Your Owns:
 
-- Change YOUR NAME, YOUR DESCRIPTION, YOUR BACKGROUND As You Want.
-- https://abview.netlify.app?title=YOUR NAME&description=YOUR DESCRIPTION&background=YOUR BACKGROUND
+- Change YOURNAME, YOURDESCRIPTION, YOURBACKGROUND As You Want.
+- https://abview.netlify.app?title=YOURNAME&description=YOURDESCRIPTION&background=YOURBACKGROUND
 - To Select Your Background, Use Numbers Provided:
 
 1. White
