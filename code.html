@@ -2,12 +2,11 @@
 <html>
 <head>
     <script>
-        // Define a list of 6-digit codes and their corresponding URLs
+        // Define a list of 6-digit codes and their corresponding URLs (NEW! YOU CAN ALSO YOUR NAME!)
         const codeList = {
-            "": "",
+            "thetechguy": "https://abview.netlify.app/?title=thetechguy&description=Hi!%20I%20am%20a%20developer%20making%20some%20useful%20things.%20(sometimes)&background=7",
         };
-
-        // Function to check for the code parameter and redirect if found
+        
         function checkAndRedirect() {
             const urlParams = new URLSearchParams(window.location.search);
             const codeParam = urlParams.get("code");
@@ -15,7 +14,6 @@
             if (codeParam && codeList[codeParam]) {
                 window.location.href = codeList[codeParam];
             } else {
-                // Code not found, display an error message or take another action
                 alert("Code not found or invalid. Please restart the app and insert code again.");
             }
         }
@@ -23,7 +21,6 @@
 </head>
 <body>
     <script>
-        // Call the checkAndRedirect function when the page loads
         checkAndRedirect();
     </script>
 </body>
